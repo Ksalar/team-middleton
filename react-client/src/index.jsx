@@ -8,13 +8,15 @@ import Login from './components/Login.jsx';
 import Signup from './components/Signup.jsx';
 import Moving from './components/Router.jsx';
 import logo from '../dist/fullLogo.png';
+import UserListings from './components/myListings.jsx';
+import registerServiceWorker from './registerServiceWorker.js';
 
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      loggedIn: false
+      loggedIn: false,
     }
   }
 
@@ -55,3 +57,4 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<ParallaxProvider><App /></ParallaxProvider>, document.getElementById('app'));
+//registerServiceWorker();
